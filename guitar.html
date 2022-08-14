@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitar</title>
+    <link rel="icon" type="image/x-icon" href="guitar.jpg">
+    <style>
+        *, *::before, *::after 
+{
+    box-sizing: border-box;
+  }
+  
+div#lutemain1 
+{
+    vertical-align: middle;
+    margin-top: -50px;
+}
+div#lutelines 
+{
+    display: inline-block;
+    height: 100%;
+    cursor: pointer;
+    margin-top: 100px;
+}
+
+div#vline1 
+{
+  /* Each string is one div tag */
+    width: 6px; /* string width */
+    background-color: #ffc023; /* string color */
+    height: 100%; /* Override in-line if you want specific height. */
+    float: left;
+    margin-left: 40px;
+}
+
+div#vline2 
+{
+    width: 6px; 
+    background-color: #ffc023; 
+    height: 100%; 
+    float: left;
+    margin-left: 40px;
+}
+
+div#vline3 
+{
+
+    width: 6px; 
+    background-color: #ffc023; 
+    height: 100%; 
+    float: left;
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+div#vline4 
+{
+    width: 6px; 
+    background-color: #ffc023; 
+    height: 100%; 
+    float: left;
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+div#vline5 
+{
+    width: 6px; 
+    background-color: #ffc023; 
+    height: 100%;
+    float: left;
+    margin-left: 40px;
+    cursor: pointer;
+    margin-right: 40px;
+}
+
+div#vline1:hover 
+{
+    background-color: #803d1d
+}
+
+div#vline2:hover 
+{
+    background-color: #803d1d
+}
+
+div#vline3:hover 
+{
+    background-color: #803d1d
+}
+
+div#vline4:hover 
+{
+    background-color: #803d1d
+}
+
+div#vline5:hover
+{
+    background-color: #803d1d
+}
+
+div#lutecircle 
+{
+    width: 315px;
+    height: 315px;
+    background: #f2f2f2;
+    border: 8px solid #ffc023;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    margin-top: -330px;
+}
+body 
+{
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    padding-top: 20px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.container
+{
+    background-color: black;
+    height: 640px;
+    color:white;
+    width: 750px;
+    text-align: center;
+}
+
+button {
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+    letter-spacing: 1.5px;
+    font-size: 15px;
+    transition: 0.5s;
+    margin-top: 20px;
+    margin-left: 00%;
+}
+
+button:hover,
+h1:hover {
+    transform: scale(1.1);
+}
+
+button:hover {
+    background-color: #e21336;
+}
+
+#btn {
+    color: white;
+    font-size: 25px;
+}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div align=center>
+            <h1 style="color: white;">THE GUITAR</h1>
+            <div class="guitar">
+                <div id="lutemain1" align="center">
+                    <div id="lutelines" align="center">
+                        <div id="vline1" align="center" onmouseenter="play('https://raw.githubusercontent.com/212mr/m15final/master/music/lute01.mp3')" style="height:490px;"></div>
+
+                        <div id="vline2" align="center" onmouseenter="play('https://raw.githubusercontent.com/212mr/m15final/master/music/lute02.mp3')" style="height:490px;"></div>
+
+                        <div id="vline3" align="center" onmouseenter="play('https://raw.githubusercontent.com/212mr/m15final/master/music/lute03.mp3')" style="height:490px;"></div>
+
+                        <div id="vline4" align="center" onmouseenter="play('https://raw.githubusercontent.com/212mr/m15final/master/music/lute02.mp3')" style="height:490px;"></div>
+
+                        <div id="vline4" align="center" onmouseenter="play('https://raw.githubusercontent.com/212mr/m15final/master/music/lute04.mp3')" style="height:490px;"></div>
+
+                        <div id="vline5" align="center" onmouseenter="play('https://raw.githubusercontent.com/212mr/m15final/master/music/lute05.mp3')" style="height:490px;"></div>
+                    </div>
+                    <div id="lutecircle" align="center"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function play(mp3_file) 
+        {
+        var audio = new Audio(mp3_file);
+        audio.play();
+        }
+    </script>
+
+</body>
+
+</html>
