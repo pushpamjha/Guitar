@@ -12,11 +12,14 @@
 {
     box-sizing: border-box;
   }
-  
+  body{
+    margin: 0;
+    padding: 0;
+  }
 div#lutemain1 
 {
     vertical-align: middle;
-    margin-top: -50px;
+    margin-top: -40px;
 }
 div#lutelines 
 {
@@ -30,7 +33,7 @@ div#vline1
 {
   /* Each string is one div tag */
     width: 6px; /* string width */
-    background-color: #ffc023; /* string color */
+    background-color: #f3ab59; /* string color */
     height: 100%; /* Override in-line if you want specific height. */
     float: left;
     margin-left: 40px;
@@ -39,7 +42,7 @@ div#vline1
 div#vline2 
 {
     width: 6px; 
-    background-color: #ffc023; 
+    background-color: #f3ab59; 
     height: 100%; 
     float: left;
     margin-left: 40px;
@@ -49,7 +52,7 @@ div#vline3
 {
 
     width: 6px; 
-    background-color: #ffc023; 
+    background-color: #f3ab59; 
     height: 100%; 
     float: left;
     cursor: pointer;
@@ -59,7 +62,7 @@ div#vline3
 div#vline4 
 {
     width: 6px; 
-    background-color: #ffc023; 
+    background-color: #f3ab59; 
     height: 100%; 
     float: left;
     cursor: pointer;
@@ -69,7 +72,7 @@ div#vline4
 div#vline5 
 {
     width: 6px; 
-    background-color: #ffc023; 
+    background-color: #f3ab59; 
     height: 100%;
     float: left;
     margin-left: 40px;
@@ -79,27 +82,27 @@ div#vline5
 
 div#vline1:hover 
 {
-    background-color: #803d1d
+    background-color: #f3570e
 }
 
 div#vline2:hover 
 {
-    background-color: #803d1d
+    background-color: #f3570e
 }
 
 div#vline3:hover 
 {
-    background-color: #803d1d
+    background-color: #f3570e
 }
 
 div#vline4:hover 
 {
-    background-color: #803d1d
+    background-color: #f3570e
 }
 
 div#vline5:hover
 {
-    background-color: #803d1d
+    background-color: #f3570e
 }
 
 div#lutecircle 
@@ -118,17 +121,16 @@ body
     margin: 0;
     min-height: 100vh;
     display: flex;
-    padding-top: 20px;
     justify-content: center;
     align-items: center;
     padding-bottom: 20px;
 }
 .container
 {
-    background-color: black;
+    background-color: rgb(63, 104, 236);
     height: 640px;
     color:white;
-    width: 750px;
+    width: 100vw;;
     text-align: center;
 }
 
@@ -144,6 +146,10 @@ button {
     margin-left: 00%;
 }
 
+h1{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
 button:hover,
 h1:hover {
     transform: scale(1.1);
@@ -155,7 +161,7 @@ button:hover {
 
 #btn {
     color: white;
-    font-size: 25px;
+    /* font-size: 25px; */
 }
     </style>
 </head>
@@ -163,7 +169,7 @@ button:hover {
 <body>
     <div class="container">
         <div align=center>
-            <h1 style="color: white;">THE GUITAR</h1>
+            <h1 style="color: rgb(212, 238, 171);">THE GUITAR</h1>
             <div class="guitar">
                 <div id="lutemain1" align="center">
                     <div id="lutelines" align="center">
